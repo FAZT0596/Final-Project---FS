@@ -1,0 +1,233 @@
+/*  MAIN AREA DIVISION  */
+
+    /*  MAIN WIDTH & HEIGHT  */
+    #main {
+        width: 1000px; height: 750px; margin: auto; 
+    }
+
+    /*  WEB CANVAS BACKGROUND COLOR  */
+    body {
+        background-color: slategray; background: linear-gradient(-90deg, rgb(126, 156, 160), rgb(146, 124, 124))
+    }
+
+/*  BACKGROUND & BORDER COLOR SELECTION  */
+
+    /*  DIVISION COLOR SELECTION  */
+
+        /*  LIGHT BACKGROUND COLOR  */
+        #main, #titleBanner, #seq {
+            background-color: rgb(216, 215, 215);
+        }
+
+        /*  TONAL BACKGROUND COLOR  */
+        #track, #title, #steps, #transportBar, #mix {
+            background-color: rgb(158, 12, 80);
+        }
+
+        /*  UNIVERSAL BORDER COLOR  */
+        #main, #title, #transportBar, #track, #steps, #mix {
+            border: solid rgb(158, 12, 80);
+        }
+
+    /*  BUTTON BACKGROUND COLOR  */
+
+        /*  DEFAULT BUTTON BACKGROUND COLOR  */
+        .transportButton, .trackButton, .soloButton, .muteButton, .padButton, .stepCountBtn, .fx1Btn, .fx2Btn, .faderBG, .trackNameLabel {
+            background-color: rgb(113, 10, 10); height: 30px; border-radius: 0px; border-width: 0px; outline: none;
+        }
+
+        .fx1Btn {
+            background-color: rgb(161, 233, 143)
+        }
+
+        /*  SOLO BUTTON BACKGROUND COLOR  */
+        .soloButton {
+            background-color: rgb(158, 165, 165); color: white;
+        }
+
+        /*  MUTE BUTTON BACKGROUND COLOR  */
+        .muteButton {
+            background-color: rgb(138, 135, 128);
+        }
+
+    /*  BUTTON HOVER COLOR  */
+
+        /*  DEFAULT HOVER BACKGROUND COLOR  */
+        .trackButton:hover, .fx1Btn:hover, .fx2Btn:hover {
+            background: rgb(179, 187, 194); 
+        }
+
+        #stopButton {
+            background: none; 
+        }
+
+    /*  BUTTON ACTIVE COLOR  */ 
+
+        /*  TRACK BUTTON ACTIVE BACKGROUND COLOR  */
+        .trackButton:active {
+            background-color: rgb(161, 233, 143);
+        }
+
+        /*  STEP BUTTON ACTIVE BACKGROUND COLOR  */
+        .padButton:active {
+            background-color: rgb(211, 123, 57);
+        }
+    
+    /*  VOLUME FADER COLOR  */
+
+        /*  VOLUME FADER BACKGROUND COLOR  */
+        .volumeFader {
+            background: rgb(179, 187, 194);
+        }
+
+        /*  VOLUME FADER THUMB BACKGROUND COLOR  */
+        .volumeFader::-webkit-slider-thumb {
+            background: rgb(138, 135, 128);
+        }
+
+        /*  VOLUME FADER LABEL BACKGROUND COLOR  */
+        .faderBG {
+            background-color: rgb(216, 215, 215)
+        }
+
+/*  DIVISION ATTRIBUTES [TOP, MIDDLE, BOTTOM, LEFT, RIGHT] */
+
+    /*  TOP ELEMENT HEIGHT  */
+    #titleBanner, #titleBG, #title, #transportBar, .trnBtnTableClass {
+        height: 70px; border-top: none;
+    }
+
+    /*  MIDDLE ELEMENT HEIGHT  */
+    #seq, #track, #steps, .trkBtnTableClass, .table3Class, .seqBtnTableClass {
+        height: 325px;
+    }
+
+    /*  BOTTOM ELEMENT HEIGHT  */
+    #mix {
+        height: 260px;  border-left: none; border-right: none;
+    }
+
+    /*  BOTTOM ELEMENT WIDTH  */
+    #fx1BtnTableClass, #fx2BtnTableClass, #volumeFaderTableClass, #faderBGTableClass, .volumeFader, #trackNameTableClass {
+        margin: auto; text-align: center; width: 100%; 
+    }
+
+    /*  LEFT ELEMENT ATTRIBUTE */
+    #title, #titleBG, #track {
+        width: 220px; float: left; border-left: none;
+    }
+
+    /*  RIGHT ELEMENT ATTRIBUTE  */
+    #transportBar, #steps, .seqBtnTableClass, .trnBtnTableClass, #stepCount, #stepCountTable {
+        width: 720px; float: right; border-right: none;
+    }
+
+    /*  LEFT & RIGHT PADDING  */ 
+    #title, #transportBar, #track, #steps, #stepCount {
+        padding-left: 3px; padding-right: 3px;
+    }
+
+
+/*  TRANSPORT BUTTON TABLE DATA [PLAY, STOP, CLEAR]  */
+
+    /*  TRANSPORT BUTTON TABLE DATA WIDTH  */
+    #playBtnTD, #stopBtnTD, #clearBtnTD{
+        width: 112.5px; 
+    }
+
+    /*  PLAY & STOP BUTTON TABLE DATA ATTRIBUTE  */
+    #playBtnTD, #stopBtnTD {
+        text-align: left; padding-left: 3px;
+    }
+
+    /*  CLEAR BUTTON TABLE DATA ATTRIBUTE  */
+    #clearBtnTD {
+        text-align: right; padding-right: 3px;
+    }
+
+    
+/*  DEFAULT ACTIVE BUTTON SCALE  */
+.transportButton:active, .trackButton:active, .padButton:active, .fx1Btn:active, .fx2Btn:active  {
+    transform: scale(0.95); 
+}
+
+/*  BUTTON WIDTH & HEIGHT  */
+
+    /*  TRANSPORT & TRACK BUTTON WIDTH  */
+    .transportButton, .trackButton {
+        width: 100px; 
+    }
+
+    /*  SOLO & MUTE BUTTON WIDTH  */
+    .soloButton, .muteButton {
+        width: 50px;
+    }
+
+    /*  STEP BUTTON WIDTH  */
+    .padButton {
+        width: 35px;
+    }
+
+    /*  TRANSPORT BUTTON HEIGHT  */
+    .transportButton {
+        height: 50px;
+    }
+
+    /*  STEP COUNT WIDTH & HEIGHT  */
+    .stepCountBtn {
+        width: 15px; height: 15px;
+    }
+
+    /*  FADER LABEL HEIGHT  */
+    .faderBG {
+        height: 150px;
+    }
+
+#title, #titleBG{
+    position: relative; line-height: 70px;
+}
+
+
+#titleBG, #presetLabelTD {
+    background-color: rgb(113, 10, 10); font-family: verdana; font-weight: bold; font-size: 18px; color: white; text-align: center; 
+}
+    
+.seqBtnTableClass, .trkBtnTableClass, .table3Class, .trnBtnTableClass {
+    font-family: verdana; font-weight: bold; text-align: center;  
+}
+
+    .trkBtnTableClass { 
+        float: left;
+    }
+
+    .table3Class {
+        float: right;
+    }
+
+#stepCountTable {
+    text-align: center;
+}
+
+.fx1Btn, .fx2Btn, .faderBG, .trackNameLabel {
+    width: 100px; 
+}
+
+.volumeFader {
+    -webkit-appearance: none; transform: rotate(270deg); outline: none;
+}
+
+.volumeFader::-webkit-slider-thumb {
+    -webkit-appearance: none; width: 25px; height: 45px; 
+}
+
+#trackNameTableClass {
+   position: relative; bottom: 58px;
+}
+
+#volumeFaderTableClass {
+    position: relative; bottom: 105px; text-align: center;
+}
+
+.transportButton, .trackButton, .soloButton, .muteButton, .trackNameLabel, .fx1Btn, .fx2Btn {
+    color: white; font-weight: bold;
+}
