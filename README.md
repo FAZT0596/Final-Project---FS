@@ -12,34 +12,34 @@ Class that would handle all the audio events, as well as making the proper conne
 correctly. 
 
 SPECS
-Monophonic Polyphony (1 voice)
-8 Tracks
-16 Steps
-WaverForm Selector [Sawtooth, Square]
-Insert Effect [LowPass Filter]
-ByPass Function For Insert Effect
-Volume Fader [One Per Track]
-Transport Buttons [Play, Stop]
-Clear Button [Clears Sequence Events]
-Time Interval Display [Current Step]
-Visual Playhead [White Means Current Step]
-Volume Fader Value Display [Default: 0.8]
-Oscillator Frequency Value Display [Click TRACK Button To Display]
+1. 16 Steps
+2. Tracks
+2. WaverForm Selector [Sawtooth, Square]
+3. Insert Effect [LowPass Filter]
+4. ByPass Function For Insert Effect
+5. Volume Fader [One Per Track]
+6. Transport Buttons [Play, Stop]
+7. Clear Button [Clears Sequence Events]
+8. Time Interval Display [Current Step]
+9. Visual Playhead [White Means Current Step]
+10. Volume Fader Value Display [Default: 0.8]
+11. Oscillator Frequency Value Display [Click TRACK Button To Display]
+12. Monophonic Polyphony (1 voice)
 
 Besides from the core functionality, I also included some “eye candy”. A good example is adjusting the scale of all 
 the button objects when pressed. As you’ll see, they shrink when pressed, and return to normal when released. I 
 always like adding small details like this, which in return give more life to the program. 
 
 TO-DO
-Re-Write JS As jQuery Code
-Re-Factor Code
-Make Sequencer Polyphonic [By Adding Additional Oscillators]
-Add More Insert Effects {Delay, Reverb], Distortion
-Add Custom WaveForm To WaveForm Selector
-Display WaveForm In Spectrum Analyzer 
-Add Custom Sequence Events [Presets]
+1. Re-Write JS As jQuery Code
+2. Re-Factor Code
+3. Make Sequencer Polyphonic [By Adding Additional Oscillators]
+4. Add More Insert Effects {Delay, Reverb], Distortion
+5. Add Custom WaveForm To WaveForm Selector
+6. Display WaveForm In Spectrum Analyzer 
+7. Add Custom Sequence Events [Presets]
 
 TO-FIX
-Play Button Only Plays The Sequence 6 Consecutive Times
+1. lay Button Only Plays The Sequence 6 Consecutive Times
 CAUSE
-- Variable Declaration Of Audio Context Inside Of Time Interval In JS
+1. Variable Declaration Of Audio Context Inside Of Time Interval In JS
