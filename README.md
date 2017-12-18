@@ -26,7 +26,9 @@ Visual Playhead [White Means Current Step]
 Volume Fader Value Display [Default: 0.8]
 Oscillator Frequency Value Display [Click TRACK Button To Display]
 
-	Besides from the core functionality, I also included some “eye candy”. A good example is adjusting the scale of all the button objects when pressed. As you’ll see, they shrink when pressed, and return to normal when released. I always like adding small details like this, which in return give more life to the program. 
+Besides from the core functionality, I also included some “eye candy”. A good example is adjusting the scale of all 
+the button objects when pressed. As you’ll see, they shrink when pressed, and return to normal when released. I 
+always like adding small details like this, which in return give more life to the program. 
 
 TO-DO
 Re-Write JS As jQuery Code
