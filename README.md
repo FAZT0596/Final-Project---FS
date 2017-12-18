@@ -40,6 +40,4 @@ TO-DO
 7. Add Custom Sequence Events [Presets]
 
 TO-FIX
-1. Play Button Only Plays The Sequence 6 Consecutive Times
-CAUSE
-1. Variable Declaration Of Audio Context Inside Of Time Interval In JS
+1. Play Button Only Plays The Sequence 6 Consecutive Times || CAUSE - Variable Declaration Of Audio Context Inside Of Time Interval In JS
