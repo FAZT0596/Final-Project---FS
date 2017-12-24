@@ -1,101 +1,55 @@
 <!DOCTYPE html>
-
 <html>
-
     <head>
-
-        <title> Final Project </title>
-        
-        <link rel="stylesheet" type="text/css" href="style.css"/>
-        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <title> Final Project </title>     
+        <link rel="stylesheet" type="text/css" href="style.css"/>    
     </head>
-
     <body>
-
+        <div id="quote">While Creating Some Cool Melodies, Click Here To Display A Random Quote! (The Background On The Sequencer Will Change Too!)</div><br><br>
+        <div id="author"></div><br><br>
+        <div id="category"></div><br> 
         <div id="main">
-
-        <div id="titleBanner">    
-
+        <div id="titleBanner">
             <div id="title" class="textClass">
-
-                <div id="titleBG">
-                    
+                <div id="titleBG">           
                     TR-303
-
                 </div>
-
-            </div>  
-            
+            </div>            
             <div id="transportBar">
-
                 <table class="trnBtnTableClass">
-
                     <tr> 
-
                         <td id="playBtnTD">
-
                             <button id="playButton" class="transportButton" onclick="startTimer()"> PLAY </button>
-
                         </td>
-
                         <td id="stopBtnTD">
-
                             <button id="stopButton" class="transportButton" onclick="stopTimer()"> STOP </button>
-
                         </td>
-
                         <td id="presetLabelTD">
-
                             0
-
                         </td>
-
                         <td id="clearBtnTD">
-
                             <button id="clearButton" class="transportButton" onclick="clearPads()"> CLEAR </button>
-
                         </td>
-
                     </tr>
-
                 </table>
-  
             </div>
-
         </div> 
-
-        <br> 
-        
-        <div id="stepCount">
-    
-        </div>
-        
+        <br>        
+        <div id="stepCount">  
+        </div>      
         <br> <br>
-
         <div id="seq">
-
             <div id="track">
-
             </div>
-
             <div id="steps">
-
             </div>
-
         </div> 
-
         <br> <br>
-
             <div id="mix">
-
             </div>
-
         </div>
-
-        <script src="script.js"> 
-
+        <script src="script.js">   
         </script>
-
     </body>
-
 </html>
