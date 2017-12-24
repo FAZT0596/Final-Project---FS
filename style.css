@@ -5,9 +5,23 @@
         width: 1000px; height: 750px; margin: auto; 
     }
 
+    a {
+        color: rgb(143, 233, 218);
+
+        text-decoration: none;
+    }
+
     /*  WEB CANVAS BACKGROUND COLOR  */
     body {
         background-color: slategray; background: linear-gradient(-90deg, rgb(126, 156, 160), rgb(146, 124, 124))
+    }
+
+    #quote, #author, #category {
+        height: 50px; width: 1000px; margin: auto; color: white; font-weight: bold; font-size: 10px; font-family: verdana; text-align: center; line-height: 25px; text-indent: 10px;
+    }
+
+    #author, #category {
+        height: 10px; line-height: 10px;
     }
 
 /*  BACKGROUND & BORDER COLOR SELECTION  */
