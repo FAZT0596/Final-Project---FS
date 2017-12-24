@@ -1,4 +1,28 @@
 /*  VARIABLE DECLARATION  */
+// jQuery Get API DATA and Change Background Color
+$(document).ready(function() {
+    $('#quote').click(function() {  
+        var colorArray = ["lightsalmon", "rgb(199, 233, 143)", "rgb(146, 124, 124)", "lightcoral", "slategray"] 
+        $.getJSON('https://talaikis.com/api/quotes/random/', function(element) {  
+        $('#quote').empty().append(element.quote)
+        $('#author').empty().append("- " + element.author + " || ")
+        .append('<a href="https://en.wikipedia.org/wiki/' + element.author +'"> Learn More About ' + element.author + '</a>')
+        $('#category').empty().append("Category: "+element.cat.toUpperCase())
+        var randomNumber = Math.floor((Math.random() * colorArray.length))
+
+            // Set For Changing Background Color Based On Mood Of Category Displayed (Sad Would Be Black Or Dark Gray, And Happy Would Be Green)
+            switch (element.cat) {
+                default:
+                $('#main').css('background-color', colorArray[randomNumber]);
+                $('#titleBanner').css('background-color', colorArray[randomNumber]);
+                $('#seq').css('background-color', colorArray[randomNumber]);
+                    break;
+            }
+
+        })  
+    })
+})   
+   
 var table, tableBody, divVar, element1, element2, text
 var counter = 1
 var cutoffValue = 1000
